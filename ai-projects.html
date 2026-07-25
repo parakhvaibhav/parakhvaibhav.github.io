@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Projects — Vaibhav Parakh</title>
+  <meta name="description" content="Multi-agent AI systems built for finance — from report automation (75+ hours saved) to deal screening and due diligence.">
+  <meta property="og:title" content="AI Projects — Vaibhav Parakh">
+  <meta property="og:description" content="Multi-agent AI systems built for finance. 75+ hours automated. Production-deployed at a Fortune 500 institution.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <!-- V2 Light Wow experiment — remove to revert -->
+  <link rel="stylesheet" href="css/v2-light-wow.css">
+</head>
+<body>
+  <nav class="nav nav--visible" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Home</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="ai-projects.html" class="nav__active">AI Projects</a></li>
+        <li><a href="finance-projects.html">Finance Projects</a></li>
+        <li><a href="leadership-projects.html">Leadership & Impact</a></li>
+        <li><a href="blog.html">Daily Blog</a></li>
+        <li class="nav__contact-icons">
+          <a href="https://www.linkedin.com/in/vaibhavparakh" target="_blank" rel="noopener" class="nav__icon" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.5 10v7M7.5 7v.01M10.5 17v-4a2 2 0 014 0v4M10.5 10v7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&to=vparakh96@gmail.com&su=Connecting%20with%20Vaibhav" target="_blank" rel="noopener" class="nav__icon" title="Gmail">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" fill="#F2F2F2"/><path d="M2 6l10 7 10-7" stroke="#EA4335" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 6v12" stroke="#4285F4" stroke-width="1.8" stroke-linecap="round"/><path d="M22 6v12" stroke="#34A853" stroke-width="1.8" stroke-linecap="round"/><path d="M2 18h20" stroke="#FBBC05" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:vparakh96@gmail.com" class="nav__icon" title="Outlook">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" fill="#0078D4"/><path d="M2 6l10 7 10-7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="12" width="7" height="7" rx="1.5" fill="#0C3B5E"/><text x="6.5" y="17.5" font-size="5.5" fill="#fff" font-family="Arial" font-weight="bold" text-anchor="middle">O</text></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__label">AI PROJECTS</p>
+      <h1 class="page-header__title">Built to prove it,<br>not just talk about it.</h1>
+    </div>
+  </header>
+
+  <section class="section projects-section">
+    <div class="container">
+      <div class="project-nav reveal">
+        <a href="#ai-deal-reviewer" class="project-nav__item">Deal Reviewer & Risk Engine</a>
+        <a href="#ai-knowledge" class="project-nav__item">Practice Knowledge Engine</a>
+        <a href="#ai-screener" class="project-nav__item">Securitization Automation</a>
+        <a href="#ai-dd" class="project-nav__item">Stratification Dashboard</a>
+      </div>
+    </div>
+    <!-- Project 1: AI Deal Reviewer & Risk Intelligence Engine -->
+    <article class="project" id="ai-deal-reviewer">
+      <div class="container">
+        <div class="project__grid">
+          <div class="project__content reveal">
+            <span class="project__tag project__tag--building">IN DEVELOPMENT</span>
+            <h3 class="project__title">AI Deal Reviewer & Risk Intelligence Engine</h3>
+            <p class="project__tagline">An AI-powered review and risk intelligence system that evaluates valuation reports for methodology compliance, identifies deal-specific and market-level risks, and delivers institutional-quality oversight at scale.</p>
+            <div class="project__details">
+              <div class="project__block">
+                <h4>The Problem</h4>
+                <p>Reviewing valuation reports across a portfolio of 50+ securities each month requires senior professionals to manually verify methodology compliance — DCF construction, discount rate calibration, scenario modeling, formatting standards — while simultaneously monitoring deal-specific risks and issuer-level market developments. At quarter-end peaks, review quality degrades under volume pressure, junior preparers wait days for feedback, and risk signals buried in deal documents go undetected.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Solution</h4>
+                <p><strong>Layer 1 — Methodology Review:</strong> Ingests valuation reports alongside preparer instructions and methodology guides. Validates every element — from DCF structure and discount rate construction down to decimal formatting, font standards, and spacing. Generates structured exception reports for preparer self-correction before senior review.</p>
+                <p><strong>Layer 2 — Risk Intelligence:</strong> Scans deal documents (agreements, compliance certificates, capital structures, financials, rating agency reports, payment reports, waivers) and cross-references market intelligence. Flags covenant breach proximity, stress scenario gaps, discount rate appropriateness, and issuer-level signals — bankruptcy filings, litigation, new issuances, credit deterioration.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Impact</h4>
+                <p>50% reduction in review time per deal. Runs across the full monthly portfolio simultaneously. Fewer revision cycles — preparer self-review means cleaner first submissions. Junior staff resolve flagged issues directly, reducing senior reviewer cost-per-deal. Eliminates reviewer fatigue on high-volume months. Client-facing risk summaries strengthen relationships and demonstrate AI-forward capabilities. Full audit trail for every review point and risk flag.</p>
+              </div>
+            </div>
+            <div class="project__tech">
+              <span class="tech-badge">Multi-Agent AI</span>
+              <span class="tech-badge">Claude Projects</span>
+              <span class="tech-badge">Document Analysis</span>
+              <span class="tech-badge">Valuation Methodology</span>
+              <span class="tech-badge">Risk Detection</span>
+              <span class="tech-badge">Portfolio-Scale</span>
+            </div>
+          </div>
+          <div class="project__visual reveal">
+            <div class="project__diagram">
+              <div class="diagram-flow diagram-flow--vertical">
+                <div class="diagram-node diagram-node--input"><span>Valuation Report + Deal Docs</span></div>
+                <div class="diagram-arrow diagram-arrow--down"></div>
+                <div class="diagram-split">
+                  <div class="diagram-branch">
+                    <div class="diagram-node diagram-node--process"><span>Methodology<br>Review</span></div>
+                    <div class="diagram-arrow diagram-arrow--down"></div>
+                    <div class="diagram-node diagram-node--output"><span>Exception<br>Report</span></div>
+                  </div>
+                  <div class="diagram-branch">
+                    <div class="diagram-node diagram-node--process"><span>Risk<br>Intelligence</span></div>
+                    <div class="diagram-arrow diagram-arrow--down"></div>
+                    <div class="diagram-node diagram-node--output"><span>Risk<br>Flags</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project__stats">
+              <div class="stat"><span class="stat__number" data-count="50">0</span><span class="stat__suffix">%</span><span class="stat__label">Review Time Reduction</span></div>
+              <div class="stat"><span class="stat__number" data-count="50">0</span><span class="stat__suffix">+</span><span class="stat__label">Deals Processed Monthly</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2: Valuations Practice Knowledge Engine -->
+    <article class="project project--alt" id="ai-knowledge">
+      <div class="container">
+        <div class="project__grid project__grid--reverse">
+          <div class="project__content reveal">
+            <span class="project__tag project__tag--building">IN DEVELOPMENT</span>
+            <h3 class="project__title">Valuations Practice Knowledge Engine</h3>
+            <p class="project__tagline">An AI-powered internal assistant that gives the entire valuation team instant access to methodology guidance, spread grids, process documentation, templates, and operational procedures — replacing hours of searching with seconds of asking.</p>
+            <div class="project__details">
+              <div class="project__block">
+                <h4>The Problem</h4>
+                <p>A valuation practice managing 20+ asset classes across hundreds of engagements generates enormous institutional knowledge — methodology guides, quarterly spread grids, preparer instructions, completion memo templates, VMS procedures, fee structures, and reviewer expectations. This knowledge lives across dozens of documents, SharePoint folders, and team members' heads. Staff spend 20-40 minutes searching per question, or interrupt senior team members. Multiply across 100+ professionals and hundreds of monthly engagements.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Solution</h4>
+                <p><strong>Operational Mode:</strong> Answers direct questions instantly — where is a template, how do I complete a process step, what are reviewer expectations for this asset class, how do I set up an engagement in VMS. Responds with step-by-step guidance and source citations.</p>
+                <p><strong>Analytical Mode:</strong> Handles complex queries — compare spread ranges across asset classes, identify changes between quarterly grids, extract min/max yields across CLO/ABS/RMBS, reconcile conflicting guidance. Produces structured tables with full source traceability.</p>
+                <p>Every answer is grounded in approved source documents. Cites document name, section, version, and quarter. Flags conflicts between documents rather than choosing silently. Covers the full taxonomy: Corporate Debt, Private Credit, CLOs, ABS, RMBS, CMBS, Agency products, CDOs/TruPs, Municipals, Loans, and Derivatives.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Impact</h4>
+                <p>Eliminates 20-40 minutes of document searching per question. Reduces senior staff interruptions. Ensures consistent methodology application across all preparers and reviewers. Accelerates onboarding — new hires access the full practice knowledge base from day one. Spread grid analysis that required manual cross-referencing across Excel files is now instant. Scales across the entire practice without additional headcount. Creates a single source of truth that stays current as quarterly guidance updates are ingested.</p>
+              </div>
+            </div>
+            <div class="project__tech">
+              <span class="tech-badge">Claude Projects</span>
+              <span class="tech-badge">Knowledge Management</span>
+              <span class="tech-badge">Document Intelligence</span>
+              <span class="tech-badge">Practice Operations</span>
+              <span class="tech-badge">Multi-Asset Coverage</span>
+              <span class="tech-badge">Source-Grounded AI</span>
+            </div>
+          </div>
+          <div class="project__visual reveal">
+            <div class="chat-mockup">
+              <div class="chat-mockup__header">
+                <div class="chat-mockup__dot"></div>
+                <div class="chat-mockup__dot"></div>
+                <div class="chat-mockup__dot"></div>
+                <span>Knowledge Engine</span>
+              </div>
+              <div class="chat-mockup__body">
+                <div class="chat-msg chat-msg--user">What's the approved discount margin range for CLO equity tranches in Q2?</div>
+                <div class="chat-msg chat-msg--ai">Based on Q2 2026 Spread Grid (CLO tab, Row 14):<br><br>CLO Equity: 12.5% – 18.0% implied yield<br><br>Source: Q2_Spread_Grid_v3.xlsx — CLO tab — Updated June 2026</div>
+              </div>
+            </div>
+            <div class="project__stats">
+              <div class="stat"><span class="stat__number" data-count="100">0</span><span class="stat__suffix">+</span><span class="stat__label">Professionals Served</span></div>
+              <div class="stat"><span class="stat__number" data-count="20">0</span><span class="stat__suffix">+</span><span class="stat__label">Asset Classes Covered</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3: Securitization Modeling Automation -->
+    <article class="project" id="ai-screener">
+      <div class="container">
+        <div class="project__grid">
+          <div class="project__content reveal">
+            <span class="project__tag project__tag--building">IN DEVELOPMENT</span>
+            <h3 class="project__title">Securitization Modeling Automation Engine</h3>
+            <p class="project__tagline">A multi-agent AI workflow that transforms 200-page legal agreements into fully modeled securitization deal structures — reducing 6-11 hours of manual scripting to under 4 hours with built-in quality assurance and continuous learning.</p>
+            <div class="project__details">
+              <div class="project__block">
+                <h4>The Problem</h4>
+                <p>Preparing securitization cashflow models for complex structured products (CLOs, ABS, RMBS) requires analysts to manually code waterfall structures from legal agreements — a process that takes 6-11 hours per deal, with 90% of that time spent translating legal language into scripting logic. With the growth of private credit and tighter reporting timelines, deal volume is increasing while delivery windows are shrinking. The current process doesn't scale.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Solution</h4>
+                <p><strong>Agent 1 — Data Extraction:</strong> Ingests legal agreements (~200 pages) and produces a structured summary (<10 pages) with all information needed to build the cashflow model — asset type, structural features, triggers, payment priorities, reserve mechanics.</p>
+                <p><strong>Agent 2 — Waterfall Script Generator:</strong> Takes the summarized output and generates the complete waterfall script with all structural inputs for a fully functional securitization model.</p>
+                <p><strong>Agent 3 — Quality Assurance:</strong> Reviews outputs from Agents 1 and 2, performs data validation, applies human reviewer checks, and generates cross-reference ties for final review.</p>
+                <p><strong>Agent 4 — Model Execution:</strong> Takes validated materials and executes the deal model in the proprietary modeling engine, extracting cashflow reports.</p>
+                <p><strong>Self-improving knowledge base:</strong> Every completed model feeds back into the agents' knowledge — accuracy compounds with every deal.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Impact</h4>
+                <p>Preparer time reduced from 6-11 hours to under 4 hours per deal. Reviewer time reduced by 2-3 hours. Delivery speed improves 30-40% to meet tighter timelines. Elevates the preparer's role from manual scripting to agent oversight and insight generation. System continuously improves with every deal modeled. Potential for end-to-end automation as agentic tooling matures.</p>
+              </div>
+            </div>
+            <div class="project__tech">
+              <span class="tech-badge">Multi-Agent AI</span>
+              <span class="tech-badge">Claude Code</span>
+              <span class="tech-badge">Natural Language to Python</span>
+              <span class="tech-badge">Document Intelligence</span>
+              <span class="tech-badge">Waterfall Modeling</span>
+              <span class="tech-badge">Self-Learning Pipeline</span>
+            </div>
+          </div>
+          <div class="project__visual reveal">
+            <div class="project__image-frame">
+              <img src="assets/images/securitization-workflow.png" alt="Securitization Modeling Multi-Agent Workflow Diagram">
+            </div>
+            <div class="project__stats">
+              <div class="stat"><span class="stat__number">6-11 → &lt;4 hrs</span><span class="stat__label">Modeling Time per Deal</span></div>
+              <div class="stat"><span class="stat__number">30-40</span><span class="stat__suffix">%</span><span class="stat__label">Faster Delivery</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 4: Portfolio Stratification Intelligence Dashboard -->
+    <article class="project project--alt" id="ai-dd">
+      <div class="container">
+        <div class="project__grid project__grid--reverse">
+          <div class="project__content reveal">
+            <span class="project__tag project__tag--building">IN DEVELOPMENT</span>
+            <h3 class="project__title">Portfolio Stratification Intelligence Dashboard</h3>
+            <p class="project__tagline">A multi-agent system that automates end-to-end investment portfolio stratification — aggregating data from 7+ market sources, analyzing risk attributes across every asset class, and delivering a dynamic Power BI dashboard in 10 minutes instead of 90.</p>
+            <div class="project__details">
+              <div class="project__block">
+                <h4>The Problem</h4>
+                <p>Investment portfolio stratification requires aggregating security-level data attributes from multiple market data sources (Bloomberg, Refinitiv, S&P Capital IQ, Moody's, Fitch, Intex, FINRA) for every holding in a client's portfolio. This process currently takes a dedicated team approximately 90 minutes per report. With 200+ reports annually across client portfolios spanning Agency, ABS, CLOs, CMBS, RMBS, Corporate Debt, and Municipal/Sovereign, the bottleneck limits scalability and ties up professionals on data aggregation rather than insight delivery.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Solution</h4>
+                <p><strong>Data Collection Agents (7+):</strong> Each agent queries a dedicated market data source via API — Bloomberg, Refinitiv, S&P Capital IQ, Moody's, Fitch, Intex, FINRA. For every security in the client's investment portfolio, agents simultaneously pull predefined attributes by product type: tranche structures, ratings, liquidity scores, spread metrics, and risk indicators.</p>
+                <p><strong>Aggregation & Dashboard Agent:</strong> Combines outputs from all data agents, normalizes fields across sources, resolves conflicts, and generates a dynamic Power BI dashboard with portfolio composition, risk stratification by asset class, key performance flags, and drilldown views by market value, ratings, vintage, seniority, industry, currency, and geography.</p>
+              </div>
+              <div class="project__block">
+                <h4>The Impact</h4>
+                <p>Report generation reduced from 90 minutes to 10 minutes — a 90% time reduction. No longer requires a dedicated team — anyone can run the tool. 200+ reports annually at $2,500 per report generating ~$500K in annual revenue. Dynamic dashboard allows real-time drilldown by asset class, risk metric, or individual security. Scales effortlessly without proportional headcount.</p>
+              </div>
+            </div>
+            <div class="project__tech">
+              <span class="tech-badge">Multi-Agent AI</span>
+              <span class="tech-badge">API Integration</span>
+              <span class="tech-badge">Bloomberg</span>
+              <span class="tech-badge">Power BI</span>
+              <span class="tech-badge">Portfolio Analytics</span>
+              <span class="tech-badge">Risk Stratification</span>
+            </div>
+          </div>
+          <div class="project__visual reveal">
+            <div class="project__gallery">
+              <div class="project__gallery-track" id="stratification-gallery">
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -1.png" alt="Corporate Charts by Market Value"></div>
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -2.png" alt="CLO Charts by Market Value"></div>
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -3.png" alt="CMBS Charts by Market Value"></div>
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -4.png" alt="Portfolio Stratification Dashboard"></div>
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -5.png" alt="Municipal Sovereign Charts"></div>
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -6.png" alt="Ratings Distribution Analysis"></div>
+                <div class="project__gallery-slide"><img src="assets/images/Stratification -7.png" alt="Asset Type Distribution"></div>
+              </div>
+              <div class="project__gallery-dots" id="stratification-dots">
+                <span class="project__gallery-dot project__gallery-dot--active"></span>
+                <span class="project__gallery-dot"></span>
+                <span class="project__gallery-dot"></span>
+                <span class="project__gallery-dot"></span>
+                <span class="project__gallery-dot"></span>
+                <span class="project__gallery-dot"></span>
+                <span class="project__gallery-dot"></span>
+              </div>
+            </div>
+            <div class="project__stats">
+              <div class="stat"><span class="stat__number">90 → 10 min</span><span class="stat__label">Report Generation</span></div>
+              <div class="stat"><span class="stat__number">~$500K</span><span class="stat__label">Annual Revenue</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <p class="project__footnote reveal">* Visuals are illustrative representations generated with AI. Actual client deliverables are confidential.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Vaibhav Parakh</p>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/in/vaibhavparakh" target="_blank" rel="noopener" class="nav__icon" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.5 10v7M7.5 7v.01M10.5 17v-4a2 2 0 014 0v4M10.5 10v7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="https://mail.google.com/mail/?view=cm&to=vparakh96@gmail.com&su=Connecting%20with%20Vaibhav" target="_blank" rel="noopener" class="nav__icon" title="Gmail"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" fill="#F2F2F2"/><path d="M2 6l10 7 10-7" stroke="#EA4335" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 6v12" stroke="#4285F4" stroke-width="1.8" stroke-linecap="round"/><path d="M22 6v12" stroke="#34A853" stroke-width="1.8" stroke-linecap="round"/><path d="M2 18h20" stroke="#FBBC05" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <a href="mailto:vparakh96@gmail.com" class="nav__icon" title="Outlook"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" fill="#0078D4"/><path d="M2 6l10 7 10-7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="12" width="7" height="7" rx="1.5" fill="#0C3B5E"/><text x="6.5" y="17.5" font-size="5.5" fill="#fff" font-family="Arial" font-weight="bold" text-anchor="middle">O</text></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <!-- V2 Light Wow experiment — remove to revert -->
+  <script src="js/v2-light-wow.js" defer></script>
+</body>
+</html>
