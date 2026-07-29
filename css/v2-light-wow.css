@@ -1105,15 +1105,13 @@ body::after {
 /* ----- ENHANCED REVEAL ANIMATIONS ----- */
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: blur(2px);
+  transform: translateY(10px);
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
 }
 
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-  filter: blur(0);
 }
 
 
