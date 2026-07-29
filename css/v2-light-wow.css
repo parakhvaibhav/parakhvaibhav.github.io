@@ -1105,9 +1105,9 @@ body::after {
 /* ----- ENHANCED REVEAL ANIMATIONS ----- */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), filter 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: blur(4px);
+  transform: translateY(16px);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: blur(2px);
 }
 
 .reveal.active {
@@ -1239,6 +1239,19 @@ body::after {
   .video-player video {
     max-width: 100% !important;
     border-radius: 12px !important;
+  }
+
+  /* World map country cards — single column on mobile */
+  .world-map__labels,
+  .world-map__labels--three {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Section titles — allow wrapping */
+  .section__title {
+    white-space: normal !important;
+    word-wrap: break-word !important;
   }
 }
 
