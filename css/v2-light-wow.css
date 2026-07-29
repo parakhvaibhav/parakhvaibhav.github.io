@@ -1670,20 +1670,17 @@ body {
 }
 
 .v2-hero-editorial .btn--ghost {
-  background: rgba(255, 255, 255, 0.7) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.08) !important;
-  color: var(--v2-text) !important;
+  background: var(--v2-accent-gradient) !important;
+  border: none !important;
+  color: #fff !important;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(26, 31, 54, 0.04);
+  box-shadow: 0 4px 16px rgba(200, 121, 65, 0.25);
   padding: 12px 24px;
   font-weight: 500;
 }
 
 .v2-hero-editorial .btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.9) !important;
-  box-shadow: var(--v2-shadow-md);
+  box-shadow: 0 6px 20px rgba(200, 121, 65, 0.35);
   transform: translateY(-2px);
 }
 
