@@ -1473,9 +1473,8 @@ body {
   align-items: center;
   gap: 4px;
   padding: 12px 16px;
-  min-width: 120px;
-  flex: 1 1 calc(33% - 12px);
-  max-width: 200px;
+  min-width: 100px;
+  flex: 1 1 calc(30% - 12px);
   background: var(--v2-surface);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
