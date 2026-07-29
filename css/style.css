@@ -80,7 +80,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   letter-spacing: -0.03em;
   color: var(--text);
   margin-bottom: 24px;
-  white-space: nowrap;
 }
 .section__desc {
   font-size: var(--text-lg);
