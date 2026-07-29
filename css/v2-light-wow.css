@@ -1220,6 +1220,26 @@ body::after {
   .blog-post {
     padding: 20px !important;
   }
+
+  /* Force single column and full-width cards on mobile */
+  .explore-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .explore-card {
+    width: 100% !important;
+  }
+
+  /* Ensure video section fills width */
+  .video-player {
+    width: 100% !important;
+  }
+
+  .video-player video {
+    max-width: 100% !important;
+    border-radius: 12px !important;
+  }
 }
 
 
@@ -1295,6 +1315,20 @@ body::after {
    PHASE 2: HERO — EDITORIAL TWO-COLUMN LAYOUT
    Personal, confident, message-first hero with large portrait.
    ============================================================ */
+
+/* ----- MOBILE OVERFLOW FIX ----- */
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+.v2-hero-editorial .v2-hero__routes {
+  overflow: hidden;
+}
 
 /* ----- V2 Hero Canvas (warm bokeh) ----- */
 .v2-hero__canvas {
