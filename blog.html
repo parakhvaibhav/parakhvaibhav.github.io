@@ -51,6 +51,10 @@
 
   <section class="section">
     <div class="container">
+      <div class="blog-search" style="margin-bottom:32px;">
+        <input type="text" id="blog-search" placeholder="Search by keyword or date..." style="width:100%;padding:14px 20px;font-size:1rem;font-family:inherit;border:1px solid rgba(0,0,0,0.08);border-radius:12px;background:rgba(255,255,255,0.8);backdrop-filter:blur(8px);box-shadow:0 2px 8px rgba(0,0,0,0.04);outline:none;transition:border-color 0.2s,box-shadow 0.2s;" onfocus="this.style.borderColor='#C87941';this.style.boxShadow='0 4px 16px rgba(200,121,65,0.1)'" onblur="this.style.borderColor='rgba(0,0,0,0.08)';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)'">
+        <p id="blog-search-count" style="margin-top:8px;font-size:0.85rem;color:#718096;display:none;"></p>
+      </div>
       <div class="blog-feed" id="blog-feed">
 
         <article class="blog-post reveal">
@@ -269,5 +273,33 @@
   <script src="js/main.js" defer></script>
   <!-- V2 Light Wow experiment — remove to revert -->
   <script src="js/v2-light-wow.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var input = document.getElementById('blog-search');
+      var posts = document.querySelectorAll('.blog-post');
+      var count = document.getElementById('blog-search-count');
+
+      input.addEventListener('input', function() {
+        var query = this.value.toLowerCase().trim();
+        var visible = 0;
+
+        posts.forEach(function(post) {
+          var date = post.querySelector('.blog-post__date').textContent.toLowerCase();
+          var title = post.querySelector('.blog-post__title').textContent.toLowerCase();
+          var body = post.querySelector('.blog-post__body').textContent.toLowerCase();
+          var match = !query || date.includes(query) || title.includes(query) || body.includes(query);
+          post.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+
+        if (query) {
+          count.style.display = 'block';
+          count.textContent = visible + ' post' + (visible !== 1 ? 's' : '') + ' found';
+        } else {
+          count.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
