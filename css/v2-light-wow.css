@@ -1460,7 +1460,7 @@ body {
 
 .hero__stats {
   display: flex;
-  gap: 24px;
+  gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 32px;
   opacity: 0;
@@ -1470,7 +1470,21 @@ body {
 .hero__stat {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 18px;
+  background: var(--v2-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: var(--v2-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--v2-shadow-md);
 }
 
 .hero__stat-num {
@@ -1480,7 +1494,7 @@ body {
 }
 
 .hero__stat-label {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: var(--v2-text-tertiary);
   text-transform: uppercase;
