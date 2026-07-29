@@ -76,7 +76,7 @@
       <!-- Left: text content -->
       <div class="v2-hero__text">
         <h1 class="hero__title">Vaibhav Parakh</h1>
-        <p class="hero__subtitle">Finance professional. AI-forward thinker.<br>Better outcomes, faster.</p>
+        <p class="hero__subtitle">Finance professional. AI-forward thinker. Better outcomes, faster.</p>
         <div class="hero__cta">
           <a href="#video" class="btn btn--primary">Watch My Intro</a>
           <a href="#explore" class="btn btn--ghost">Explore</a>
@@ -104,6 +104,17 @@
           <source src="assets/images/vaibhav_intro_web_ready.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE KEYWORDS -->
+  <section class="section keywords-section" style="padding-top: 48px; padding-bottom: 48px;">
+    <div class="container">
+      <p class="section__label reveal">EXPERTISE</p>
+      <h2 class="section__title reveal">What I bring to the table.</h2>
+      <div class="keywords-cloud" id="keywords-cloud">
+        <span>Multi-Agent AI</span><span>M&A Due Diligence</span><span>Financial Modeling</span><span>Securitization</span><span>DCF Analysis</span><span>Valuation</span><span>ASC 820</span><span>Risk Assessment</span><span>Corporate Development</span><span>Strategic Finance</span><span>Deal Evaluation</span><span>LBO Modeling</span><span>Claude API</span><span>Agentic Workflows</span><span>Portfolio Management</span><span>Structured Finance</span><span>Capital Markets</span><span>SOFR Transition</span><span>ABS/MBS</span><span>Waterfall Modeling</span><span>Investor Reporting</span><span>Data Room Analysis</span><span>SEC Compliance</span><span>Regulatory Consulting</span><span>Power BI</span><span>Tableau</span><span>Bloomberg</span><span>Capital IQ</span><span>Process Automation</span><span>Custom GPT</span><span>Prompt Engineering</span><span>Team Leadership</span><span>Offshore Management</span><span>Client Advisory</span><span>Business Development</span><span>Cross-Border Transactions</span><span>Scenario Analysis</span><span>Credit Risk</span>
       </div>
     </div>
   </section>
@@ -172,5 +183,20 @@
   <script src="js/main.js" defer></script>
   <!-- V2 Light Wow experiment — remove to revert -->
   <script src="js/v2-light-wow.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cloud = document.getElementById('keywords-cloud');
+      if (!cloud) return;
+      const words = cloud.querySelectorAll('span');
+      let current = 0;
+      function cycleKeyword() {
+        words.forEach(w => w.classList.remove('keyword-active'));
+        words[current].classList.add('keyword-active');
+        current = (current + 1) % words.length;
+      }
+      cycleKeyword();
+      setInterval(cycleKeyword, 500);
+    });
+  </script>
 </body>
 </html>

@@ -1251,6 +1251,11 @@ body::after {
     white-space: normal !important;
     word-wrap: break-word !important;
   }
+
+  /* Hide scroll indicator on mobile — overlaps portrait */
+  .hero__scroll {
+    display: none !important;
+  }
 }
 
 
