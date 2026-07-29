@@ -1253,12 +1253,21 @@ body::after {
   }
 
   /* Reposition scroll indicator on mobile below portrait */
+  .v2-hero__grid {
+    position: relative;
+  }
+
   .hero__scroll {
     position: static !important;
     transform: none !important;
     margin-top: 32px;
     opacity: 1 !important;
     animation: none !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    order: 3;
   }
 }
 
