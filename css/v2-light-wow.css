@@ -1252,9 +1252,13 @@ body::after {
     word-wrap: break-word !important;
   }
 
-  /* Hide scroll indicator on mobile — overlaps portrait */
+  /* Reposition scroll indicator on mobile below portrait */
   .hero__scroll {
-    display: none !important;
+    position: static !important;
+    transform: none !important;
+    margin-top: 32px;
+    opacity: 1 !important;
+    animation: none !important;
   }
 }
 
